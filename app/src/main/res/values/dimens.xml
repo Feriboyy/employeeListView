@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_medium">20dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="radius">20dp</dimen>
+    <dimen name="font_medium">20sp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="small_font">15sp</dimen>
+    <dimen name="padd">10sp</dimen>
+    <dimen name="height_input">50dp</dimen>
+    <dimen name="height_medium">50dp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="margin_big">40dp</dimen>
+</resources>

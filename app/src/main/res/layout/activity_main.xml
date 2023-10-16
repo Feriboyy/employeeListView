@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_medium"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_big"
+        android:hint="@string/first_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_medium"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:hint="@string/last_name"
+        app:layout_constraintTop_toBottomOf="@+id/first_name" />
+
+    <EditText
+        android:id="@+id/birth_day"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_medium"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:hint="@string/birth_day"
+        app:layout_constraintTop_toBottomOf="@+id/last_name"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/marital_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_medium"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:hint="@string/marital_status"
+        app:layout_constraintTop_toBottomOf="@id/birth_day" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_medium"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:hint="@string/address"
+        app:layout_constraintTop_toBottomOf="@+id/marital_status" />
+
+    <EditText
+        android:id="@+id/mobile_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_medium"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:hint="@string/mobile_number"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/register_a_new_employee"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginHorizontal="@dimen/margin_big"
+        app:layout_constraintTop_toBottomOf="@+id/mobile_number" />
+
+    <Button
+        android:id="@+id/list_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/show_employee_s_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginHorizontal="@dimen/margin_big"
+        app:layout_constraintTop_toBottomOf="@+id/register_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
