@@ -13,6 +13,8 @@ public class DataManager {
 
     }
 
+
+
     public boolean validateEmployee(String firstName, String lastName) {
         for (Employee E : employees) {
             if (E.getFirstName().equals(firstName) && E.getLastName().equals(lastName)) {

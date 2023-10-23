@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EmployeeListView">
+    tools:context=".EmployeeListViewActivity">
 
     <TextView
         android:id="@+id/title"
@@ -22,15 +22,16 @@
         android:id="@+id/lv_employee"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_medium"
         android:layout_marginTop="@dimen/margin_medium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title"
-        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="@integer/material_motion_duration_long_1"
-        tools:listitem="@layout/list_item_employee"
         android:dividerHeight="@dimen/margin_small"
-        android:layout_marginHorizontal="@dimen/margin_medium"/>
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/list_item_employee" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_bottom"

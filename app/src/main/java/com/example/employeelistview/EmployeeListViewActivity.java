@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 // This model executes the design for each employee in the list
-public class EmployeeListView extends AppCompatActivity {
+public class EmployeeListViewActivity extends AppCompatActivity {
 
 
     ListView listView;

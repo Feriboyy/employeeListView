@@ -5,27 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText firstNameInput, lastNameInput, birthDayInput, maritalStatusInput, addressInput, mobileNumberInput;
-
-
+    EditText firstNameInput, lastNameInput, birthDayInput, maritalStatusInput, addressInput,
+            mobileNumberInput;
     DataManager dataManager = new DataManager();
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
 
         firstNameInput = findViewById(R.id.first_name);
         lastNameInput = findViewById(R.id.last_name);
@@ -33,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         maritalStatusInput = findViewById(R.id.marital_status);
         addressInput = findViewById(R.id.address);
         mobileNumberInput = findViewById(R.id.mobile_number);
-
 
         Button registerButton = findViewById(R.id.register_btn);
         Button listButton = findViewById(R.id.list_btn);
@@ -69,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, EmployeeListView.class);
+                Intent intent = new Intent(MainActivity.this, EmployeeListViewActivity.class);
                 startActivity(intent);
 
             }

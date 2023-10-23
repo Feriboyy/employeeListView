@@ -1,6 +1,5 @@
 package com.example.employeelistview;
 
-import static com.example.employeelistview.DataManager.employees;
 
 import android.content.Context;
 import android.view.LayoutInflater;
